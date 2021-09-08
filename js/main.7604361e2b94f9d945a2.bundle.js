@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_config=self.webpackChunkwebpack_config||[]).push([[179],{192:function(o,e,n){n(562),n(98),console.log("module-1"),console.log("это index.js"),console.log("это uuu.js"),document.querySelector("div")},562:function(o,e,n){o.exports=n.p+"images/leptop.jpg"},98:function(o,e,n){o.exports=n.p+"images/icon.svg"}},function(o){o(o.s=192)}]);
