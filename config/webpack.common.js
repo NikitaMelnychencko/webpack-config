@@ -12,7 +12,7 @@ module.exports = {
     path: paths.dist,
     filename: 'bundle.js',
     publicPath: '/',
-    assetModuleFilename: 'images/[name][ext]'
+    //assetModuleFilename: 'images/[name][ext]'
   },
   module: {
     rules: [
@@ -28,21 +28,14 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|svg|eot|ttf|woff2?)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]',
+        },
       },
       {
         test: /\.hbs$/,
         use: 'handlebars-loader',
       },
-      // {
-      //   test: /\.(png|jp(e*)g|gif)$/,
-      //   exclude: /node_modules/,
-      //   use: [{ 
-      //     loader: 'url-loader',
-      //     options: {
-      //       limit: 10000,
-      //     }
-      //   }]
-      // }
     ],
   },
   plugins: [
