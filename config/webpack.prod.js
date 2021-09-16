@@ -9,7 +9,7 @@ module.exports = merge(commonConfig, {
   devtool: false,
   output: {
     path: paths.dist,
-    publicPath: '/',
+    publicPath: './',
     filename: 'js/[name].[contenthash].bundle.js',
   },
   module: {
